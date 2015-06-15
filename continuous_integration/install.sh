@@ -38,7 +38,8 @@ if [[ "$DISTRIB" == "conda" ]]; then
 
 elif [[ "$DISTRIB" == "ubuntu" ]]; then
     # Use standard ubuntu packages in their default version
-    sudo apt-get install -qq python-numpy cython
+    virtualenv --system-site-packages testvenv
+    source testvenv/bin/activate
 fi
 
 pip install -r requirements.txt
