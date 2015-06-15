@@ -13,9 +13,6 @@ set -e
 export CC=gcc
 export CXX=g++
 
-sudo apt-get update -qq
-sudo apt-get install fonts-droid
-
 if [[ "$DISTRIB" == "conda" ]]; then
     # Deactivate the travis-provided virtual environment and setup a
     # conda-based environment instead

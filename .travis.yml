@@ -6,6 +6,7 @@ addons:
       # Only used by the DISTRIB="ubuntu" setting
       - python-numpy
       - cython
+      - fonts-droid
 virtualenv:
   system_site_packages: true
 env:
